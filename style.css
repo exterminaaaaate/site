@@ -248,20 +248,16 @@ p {
     display: none;
 }
 
-.fa-envelope {
-    color: #f0f0f0;
-    font-size: 50px;
-}
-
 .fa-file {
-    
     color: #f0f0f0;
     font-size: 50px;
+    padding: 0 0 0 0;
 }
 
 .fa-linkedin-in {
     color: #f0f0f0;
     font-size: 50px;
+    padding: 0 0 20px 0;
 }
 
 .experience-list {
@@ -379,7 +375,10 @@ p {
         animation: pulse54012 500ms ease infinite alternate 250ms;
       }
 
-
+.campos-contacto {
+    font-family: Fira Sans Condensed;
+    text-align: bottom;
+}
       #contact .contact-left-panel,
       #contact .contact-right-panel {
         float: left;
@@ -389,30 +388,36 @@ p {
       #contact .contact-left-panel {
         width: 60px;
         text-align: center;
-        background-color: #FFE10C;
-        padding-top: ;
+        padding-top: 60px;
       }
 
       #contact .contact-right-panel {
         width: calc(100% - 60px);
-        padding-left: 20px;
-        background-color: red;
+        padding-left: 50px;
       }
 
     #contact .success {
         display: none;
-    }
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #0f0f0fef;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+}
 
       /* From uiverse.io by @satyamchaudharydev */
       #contact .form {
     --width-of-input: 200px;
     --border-height: 1px;
     --border-before-color: rgba(221, 221, 221, 0.39);
-    --border-after-color: #5891ff;
-    --input-hovered-color: #4985e01f;
+    --input-hovered-color: #0f0f0f;
     position: relative;
-    width: var(--width-of-input);
+    width: 80%;
    }
+
    /* styling of Input */
    #contact .input {
     color: #fff;
@@ -425,6 +430,12 @@ p {
     border: none;
     border-bottom: var(--border-height) solid var(--border-before-color);
    }
+
+#contact .input-grande {
+height: 100px;
+}
+
+
    /* styling of animated border */
    #contact .input-border {
     position: absolute;
@@ -435,6 +446,7 @@ p {
     left: 0;
     transition: 0.3s;
    }
+
    /* Hover on Input */
    #contact input:hover {
     background: var(--input-hovered-color);
@@ -443,6 +455,7 @@ p {
    #contact input:focus {
     outline: none;
    }
+
    /* here is code of animated border */
    #contact input:focus ~ .input-border {
     width: 100%;
@@ -459,11 +472,12 @@ p {
     margin: 0;
     border: none;
     background: none;
+    padding-top: 30px
   }
   
   #contact button {
-    --primary-color: #111;
-    --hovered-color: #c84747;
+    --primary-color: #f0f0f0;
+    --hovered-color: #ffe10c;
     position: relative;
     display: flex;
     font-weight: 600;
@@ -487,18 +501,18 @@ p {
     bottom: -7px;
     background: var(--hovered-color);
     height: 2px;
-    transition: 0.3s ease-out;
+    transition: 0.4s ease-out;
   }
   
   #contact button p::before {
     position: absolute;
   /*   box-sizing: border-box; */
-    content: "Subscribe";
+    content: "";
     width: 0%;
     inset: 0;
     color: var(--hovered-color);
     overflow: hidden;
-    transition: 0.3s ease-out;
+    transition: 0.6s ease-out;
   }
   
   #contact button:hover::after {
@@ -611,4 +625,46 @@ p {
         height: auto;
         width: 100%;
     }   
+
+    #contact .contact-left-panel {
+        text-align: left;
+        padding: 0;
+    }
+
+    #contact .contact-left-panel a {
+        padding: 0;
+        margin: 0;
+    }
+
+    #contact .contact-left-panel {}
+
+   
+    
+    #contact .contact-right-panel {
+        text-align: left;
+        padding: 0;
+    }
+
+    #contact .contact-right-panel a {
+        padding: 0;
+        margin: 0;
+    }
+
+    #contact .contact-right-panel {}
+
+
+    .fa-linkedin-in {
+        color: #f0f0f0;
+        font-size: 40px;
+        padding: 20px 20px 20px 5px;
+    }
+
+    .fa-file {
+        color: #f0f0f0;
+        font-size: 40px;
+        padding: 20px 0 0 0;
+    }
+    
+
+
 }
