@@ -6,10 +6,12 @@ function vaipara(menuItem) {
         document.getElementById("about").style.display = "none";
         document.getElementById("experience").style.display = "none";
         document.getElementById("education").style.display = "none";
+        document.getElementById("contact").style.display = "none";
         document.getElementById(menuItem).style.display = "block";
+        $(".experience-list .bottom").slideUp( "slow" );
+        $(".experience-list .top .top-right").html("+");
 
-
-        if($( window ).width() <= 950) {
+        if($( window ).width() <= 1100) {
                 $('#main-menu').fadeOut("slow");
         }
 
@@ -60,7 +62,7 @@ $( document ).ready(function() {
         });
 
         $( window ).resize(function() {
-                if($( window ).width() <= 950) {
+                if($( window ).width() <= 1100) {
                         $('#main-menu').fadeOut("slow");
                 } else {
                         $('#main-menu').fadeIn("slow");
@@ -83,4 +85,6 @@ $( document ).ready(function() {
                         $(this).find('.top-right').html("+");
                 }
         });
+
+
 });
