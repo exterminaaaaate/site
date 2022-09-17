@@ -286,6 +286,83 @@ p {
     display: block;
 }
 
+
+    /* From uiverse.io by @mrhyddenn */
+
+    .chevrons {
+
+        margin-left: -3px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+        position:relative;
+        left:50%;
+        cursor: pointer;
+      }
+      
+      .chevrondown {
+        margin-top: -6px;
+        position: relative;
+        border: solid var(--color);
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        transform: rotate(45deg);
+      }
+      
+      .chevrondown:nth-child(odd) {
+        animation: pulse54012 500ms ease infinite alternate;
+      }
+      
+      .chevrondown:nth-child(even) {
+        animation: pulse54012 500ms ease infinite alternate 250ms;
+      }
+      
+      @keyframes pulse54012 {
+        from {
+          opacity: 0;
+        }
+      
+        to {
+          opacity: 0.5;
+        }
+      }
+    
+        .chevrondown {
+            margin-top: -6px;
+            position: relative;
+            border: solid var(--color);
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            transform: rotate(45deg);
+        }
+      
+      .chevronup {
+        margin-top: -6px;
+        position: relative;
+        border: solid var(--color);
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        transform: rotate(225deg);
+      }
+      
+      .chevronup:nth-child(odd) {
+        animation: pulse54012 500ms ease infinite alternate;
+      }
+      
+      .chevronup:nth-child(even) {
+        animation: pulse54012 500ms ease infinite alternate 250ms;
+      }
+
+
+
 @media screen and (max-width: 950px) {
     .painel .left-panel {
         width: 100vw;
