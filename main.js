@@ -52,7 +52,7 @@ $( document ).ready(function() {
                                 if (indexAtual < 2) {
                                         blockscroll = true;
                                         vaiParaAbout(indexAtual + 1);
-                                }
+                            window.location.search.substr(1)    }
                         }
                 }
         });
@@ -85,6 +85,12 @@ $( document ).ready(function() {
                         $(this).find('.top-right').html("+");
                 }
         });
+
+        if(window.location.search != "") {
+                vaipara("contact");
+               $('#contact .success').show();
+        }
+        
 
 
 });

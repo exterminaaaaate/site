@@ -157,21 +157,6 @@ p {
     transform: translateY(-50%);
 }
 
-#left-column {
-    float: left;
-    background-color: red;
-    border: 1px;
-    width: 30%;
-    display: block;
-}
-
-#right-column {
-    float: left;
-    width: 70%;
-    background-color: blue;
-    display: block;
-}
-
 .linhabaixo {
     border-bottom: solid 1px #f3f3f3;
     padding-bottom: 5px;
@@ -395,6 +380,148 @@ p {
       }
 
 
+      #contact .contact-left-panel,
+      #contact .contact-right-panel {
+        float: left;
+        height: 200px;
+      }
+
+      #contact .contact-left-panel {
+        width: 60px;
+        text-align: center;
+        background-color: #FFE10C;
+        padding-top: ;
+      }
+
+      #contact .contact-right-panel {
+        width: calc(100% - 60px);
+        padding-left: 20px;
+        background-color: red;
+      }
+
+    #contact .success {
+        display: none;
+    }
+
+      /* From uiverse.io by @satyamchaudharydev */
+      #contact .form {
+    --width-of-input: 200px;
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #5891ff;
+    --input-hovered-color: #4985e01f;
+    position: relative;
+    width: var(--width-of-input);
+   }
+   /* styling of Input */
+   #contact .input {
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+   }
+   /* styling of animated border */
+   #contact .input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+   }
+   /* Hover on Input */
+   #contact input:hover {
+    background: var(--input-hovered-color);
+   }
+   
+   #contact input:focus {
+    outline: none;
+   }
+   /* here is code of animated border */
+   #contact input:focus ~ .input-border {
+    width: 100%;
+   }
+   /* === if you want to do animated border on typing === */
+   /* remove input:focus code and uncomment below code */
+   /* input:valid ~ .input-border{
+     width: 100%;
+   } */
+
+   /* From uiverse.io by @satyamchaudharydev */
+   #contact button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+  }
+  
+  #contact button {
+    --primary-color: #111;
+    --hovered-color: #c84747;
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  #contact button p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: var(--primary-color)
+  }
+  
+  #contact button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  #contact button p::before {
+    position: absolute;
+  /*   box-sizing: border-box; */
+    content: "Subscribe";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+  #contact button:hover::after {
+    width: 100%;
+  }
+  
+  #contact button:hover p::before {
+    width: 100%;
+  }
+  
+  #contact button:hover svg {
+    transform: translateX(4px);
+    color: var(--hovered-color)
+  }
+  
+  #contact button svg {
+    color: var(--primary-color);
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
+  }
+
 
 @media screen and (max-width: 1100px) {
     .painel .left-panel {
@@ -475,4 +602,13 @@ p {
         position: relative;
         height: 100%;
     }
+
+    #contact .contact-left-panel,
+    #contact .contact-right-panel {
+        clear: both;
+        float: none;
+        display: block;
+        height: auto;
+        width: 100%;
+    }   
 }

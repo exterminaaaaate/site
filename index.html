@@ -514,23 +514,35 @@
     <!-- CONTACT -->
     <div class="right-panel" style="display: none;" id="contact">
       <div class="main-container">
-        <div class="inner-container">
+        <div class="inner-container" style="width: 100%">
           <h1 class="bold-800 color-white font-fira size-45">CONTACT ME<span class="color-yellow">.</span></h1>
 
-
-
-          <div id="left-column">
-
-
+          <div class="contact-left-panel">
             <a href="https://www.linkedin.com/in/danielafilipamartins/" target="_blank"><i
                 class="fa-brands fa-linkedin-in"></i></a>
-            <a href="mailto:danieladasilvawork@live.com.pt?subject=Hey 👋"><i
-                class="fa-sharp fa-solid fa-envelope"></i></a>
             <a href="DanielaMartins_CV.pdf" target="_blank"><i class="fa-regular fa-file"></i></a>
-          </div>
+          </div><div class="contact-right-panel">
+            <div class="success">Email enviado com sucesso</div>
+            <form action="https://api.web3forms.com/submit" method="post" class="form">
+              <input type="hidden" name="access_key" value="3cdf015d-9a00-403c-a29e-cc225a034953">
+              <input type="hidden" name="redirect" value="https://danielamartins.eu/index.html?contact=success">
+              <input type="hidden" name="subject" value="Hey 👋">
 
-          <div id="right-column">
-            Grid Layout right
+              <input class="input" placeholder="Your Name" type="text" name="name" required>
+              <span class="input-border"></span>
+              <input class="input" placeholder="Your Email" type="email" name="email" required>
+              <span class="input-border"></span>
+              <input class="input" placeholder="Your message" type="tezt" name="message" required>
+              <span class="input-border"></span>
+
+              <button type="submit">
+                <p>Send Message</p>
+                <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+                </svg>
+            </button>
+              
+            </form>
           </div>
 
         </div>
