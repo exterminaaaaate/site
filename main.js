@@ -90,7 +90,4 @@ $( document ).ready(function() {
                 vaipara("contact");
                $('#contact .success').show();
         }
-        
-
-
 });
