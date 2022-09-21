@@ -399,13 +399,13 @@ p {
     #contact .success {
         display: none;
         position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        left: 0;
+        top: 0;
         background-color: #0f0f0fef;
         width: 100%;
         height: 100%;
         text-align: center;
+        vertical-align: middle;
 }
 
       /* From uiverse.io by @satyamchaudharydev */
@@ -590,6 +590,10 @@ height: 100px;
 
     .experience-list .top {
         width: 85vw;
+    }
+
+    #about-me {
+        margin-bottom: 100px;
     }
 }
 

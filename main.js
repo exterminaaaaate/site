@@ -24,6 +24,9 @@ function vaipara(menuItem) {
 
                 indexAtual = 0;
         }
+
+        $('#contact .success').hide();
+        $('#contact form input').val("");
 }
 
 function vaiParaAbout(index) {
@@ -88,6 +91,6 @@ $( document ).ready(function() {
 
         if(window.location.search != "") {
                 vaipara("contact");
-               $('#contact .success').show();
+                $('#contact .success').show();
         }
 });
